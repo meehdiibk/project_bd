@@ -33,7 +33,6 @@ CREATE TABLE Equipe (
   id_equipe serial PRIMARY KEY,
   nom_pays text not null,
   nom_sport text not null,
-   integer,
   FOREIGN KEY(nom_pays) REFERENCES Pays(nom_pays),
   FOREIGN KEY(nom_sport) REFERENCES Sport(nom_sport),
 );
@@ -72,7 +71,7 @@ CREATE TABLE Athlete_EpreuveIndividuelle (
   performance text,
   FOREIGN KEY(id_athlete) REFERENCES Athlete(id_athlete),
   FOREIGN KEY(id_epreuve) REFERENCES EpreuveIndividuelle(id_epreuve),
-)
+);
 
 DROP TABLE IF EXISTS Equipe_EpreuveCollective;
 
