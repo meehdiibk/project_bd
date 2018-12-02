@@ -43,8 +43,8 @@ CREATE TABLE Sport (
   id_sport serial PRIMARY KEY,
   nom_sport text not null,
   type text,
+  
 );
-
 DROP TABLE IF EXISTS EpreuveCollective;
 
 CREATE TABLE EpreuveCollective (
@@ -83,3 +83,6 @@ CREATE TABLE Equipe_EpreuveCollective (
   FOREIGN KEY(id_epreuve) REFERENCES EpreuveCollective(id_epreuve),
   FOREIGN KEY(id_gagnant, id_perdant) REFERENCES Equipe(id_equipe),
 );
+
+insert into Pays values(USA);
+  SELECT * from Pays;
