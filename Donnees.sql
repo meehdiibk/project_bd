@@ -1,3 +1,6 @@
+-- Fichier qui peuple les tables
+
+-- Pays
 insert into pays (nom, code_pays) values ('Etats-Unis', 'USA');
 insert into pays (nom, code_pays) values ('Hongrie', 'HON');
 insert into pays (nom, code_pays) values ('Jamaïque', 'JAM');
@@ -14,6 +17,8 @@ insert into pays (nom, code_pays) values ('Afrique Du Sud', 'AFS');
 insert into pays (nom, code_pays) values ('Grenada', 'GRD');
 insert into pays (nom, code_pays) values ('Kenya', 'KEN');
 insert into pays (nom, code_pays) values ('Ethiopie', 'ETH');
+
+-- Athlete
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Michael Phelps','USA',5,1,0, 1);
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Kathleen Ledecky','USA',4,1,0, 1);
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Simone Biles','USA',4,0,1, 1);
@@ -50,19 +55,23 @@ insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_me
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Eliud Kipchoge','KEN',1,0,0, 1);
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Feyisa Lilesa','ETH',0,1,0, 1);
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Galen Rupp','USA',0,0,1, 1);
+
+-- EpreuveIndividuelle
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('100m', 1);
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('200m', 1);
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('400m', 1);
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('marathon', 1);
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(7,1,'or','9.81');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(28,1,'argent','9.89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(29,1,'bronze','9.91');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(7,2,'or','19.78');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(29,2,'argent','20.02');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(30,2,'bronze','20.12');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(31,3,'or','43.03');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(32,3,'argent','43.76');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(33,3,'bronze','43.85');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(34,4,'or','2h08.44');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(35,4,'argent','2h09.54');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(36,4,'bronze','2h10.05');
+
+-- Athlete_EpreuveIndividuelle
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(7,1,'or','9mn81"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(28,1,'argent','9mn89"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(29,1,'bronze','9mn91"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(7,2,'or','19mn78"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(29,2,'argent','20mn02"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(30,2,'bronze','20mn12"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(31,3,'or','43mn03"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(32,3,'argent','43mn76"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(33,3,'bronze','43mn85"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(34,4,'or','2h08mn44"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(35,4,'argent','2h09mn54"');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(36,4,'bronze','2h10mn05"');

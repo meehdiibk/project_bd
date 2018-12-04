@@ -1,3 +1,5 @@
+-- Fichier qui crée les tables
+
 DROP TABLE IF EXISTS Pays cascade;
 DROP TABLE IF EXISTS Athlete cascade;
 DROP TABLE IF EXISTS Equipe cascade;
@@ -43,7 +45,7 @@ CREATE TABLE Athlete (
 
   CREATE TABLE Equipe (
     id_equipe serial,
-    code_pays integer not null, --code_pays
+    code_pays text not null,
     id_sport integer not null,
     PRIMARY KEY(id_equipe),
     FOREIGN KEY(code_pays) REFERENCES Pays(code_pays),
