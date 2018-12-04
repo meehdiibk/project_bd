@@ -17,8 +17,8 @@ CREATE TABLE Pays (
   nb_medailles_bronze integer default 0,
   nb_medailles_total integer default 0,
   rang integer default 0,
-  PRIMARY KEY(id_pays));
-
+  PRIMARY KEY(id_pays)
+);
 
 CREATE TABLE Sport (
   id_sport serial,
@@ -26,7 +26,6 @@ CREATE TABLE Sport (
   categorie text,
   PRIMARY KEY(id_sport)
 );
-
 
 CREATE TABLE Athlete (
     id_athlete serial,
@@ -42,7 +41,6 @@ CREATE TABLE Athlete (
     FOREIGN KEY(id_sport) REFERENCES Sport(id_sport)
   );
 
-
   CREATE TABLE Equipe (
     id_equipe serial,
     code_pays integer not null, --code_pays
@@ -51,7 +49,6 @@ CREATE TABLE Athlete (
     FOREIGN KEY(code_pays) REFERENCES Pays(code_pays),
     FOREIGN KEY(id_sport) REFERENCES Sport(id_sport)
   );
-
 
 CREATE TABLE EpreuveCollective (
   id_epreuve serial PRIMARY KEY,
@@ -72,21 +69,23 @@ CREATE TABLE Athlete_EpreuveIndividuelle (
   medaille text not null,
   performance text,
   FOREIGN KEY(id_athlete) REFERENCES Athlete(id_athlete),
-  FOREIGN KEY(id_epreuve) REFERENCES EpreuveIndividuelle(id_epreuve));
+  FOREIGN KEY(id_epreuve) REFERENCES EpreuveIndividuelle(id_epreuve)
+);
 
 CREATE TABLE Equipe_EpreuveCollective (
   id_epreuve integer not null,
   id_equipe integer not null,
   medaille text not null,
   FOREIGN KEY(id_epreuve) REFERENCES EpreuveCollective(id_epreuve),
-  FOREIGN KEY(id_equipe) REFERENCES Equipe(id_equipe));
-
+  FOREIGN KEY(id_equipe) REFERENCES Equipe(id_equipe)
+);
 
 CREATE TABLE Resultats_Equipe(
 	id_epreuve integer not null,
 	id_gagnant integer not null,
 	id_perdant integer not null,
-	score text,
 	FOREIGN KEY(id_epreuve) REFERENCES EpreuveCollective(id_epreuve),
+  score text,
 	FOREIGN KEY(id_perdant) REFERENCES Equipe(id_equipe),
-  FOREIGN KEY(id_gagnant) REFERENCES Equipe(id_equipe));
+  FOREIGN KEY(id_gagnant) REFERENCES Equipe(id_equipe)
+);
