@@ -128,10 +128,20 @@ insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_me
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Galen Rupp','USA',0,0,1, 1);
 
 -- EpreuveIndividuelle
-insert into epreuveindividuelle (nom_epreuve, id_sport) values('100m', 1);
-insert into epreuveindividuelle (nom_epreuve, id_sport) values('200m', 1);
-insert into epreuveindividuelle (nom_epreuve, id_sport) values('400m', 1);
-insert into epreuveindividuelle (nom_epreuve, id_sport) values('marathon', 1);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('100m (H)', 1);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('100m (F)', 2);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('200m (H)', 1);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('200m (F)', 2);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('400m (H)', 1);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('400m (F)', 2);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('marathon (H)', 1);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('marathon (F)', 2);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('lancer de poids (H)', 1);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('lancer de poids (F)', 2);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('lancer de marteau (H)', 1);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('lancer de marteau (F)', 2);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('lancer de javelot (H)', 1);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('lancer de javelot (F)', 2);
 
 -- Athlete_EpreuveIndividuelle
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, prix, performance) values(7,1,'or','9mn81"');
