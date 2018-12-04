@@ -37,6 +37,7 @@ CREATE TABLE Athlete (
     nb_medailles_or integer,
     nb_medailles_argent integer,
     nb_medailles_bronze integer,
+    nb_medailles_total integer,
     rang integer default 0,
     PRIMARY KEY(id_athlete),
     FOREIGN KEY(code_pays) REFERENCES Pays(code_pays),
