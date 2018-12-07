@@ -33,6 +33,7 @@ CREATE TABLE Athlete (
     id_athlete serial,
     nom text not null,
     code_pays text not null,
+    naissance date not null,
     id_sport integer not null,
     nb_medailles_or integer,
     nb_medailles_argent integer,

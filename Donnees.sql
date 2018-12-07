@@ -90,42 +90,29 @@ insert into Pays (nom, code_pays) values('Rép. Dominicaine', 'DOM');
 insert into Pays (nom, code_pays) values('Trinité-et-Tobago', 'TRI');
 
 -- Athlete
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Michael Phelps','USA',5,1,0, 45, 6);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Kathleen Ledecky','USA',4,1,0, 46, 5);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Simone Biles','USA',4,0,1, 30,5);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Katinka Hosszu','HON',3,1,0, 46, 4);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Ryan Murphy','USA',3,0,0, 45, 3);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Danuta Kozak','HON',3,0,0, 16, 3);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Usain Bolt','JAM',3,0,0, 1,3);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Jason Kenny','GBR',3,0,0, 17, 3);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Simone Manuel','USA',2,2,0, 45, 4);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Madeline (Maya) Dirado','USA',2,1,1, 46, 4);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Elaine Thompson','JAM',2,1,0, 2, 3);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, nb_medailles_total) values('Allyson Felix','USA',2,1,0, 2,3);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Nathan Adrian','USA',2,0,2, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Max Whitlock','GBR',2,0,1, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Anthony Ervin','USA',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Lilly King','USA',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Yana Egorian','RUS',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Kohei Uchimura','JAP',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Niccolo Campriani','ITA',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Sebastian Brendel','ALL',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Gabriella Szabo','HON',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Marcus Gross','ALL',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Max Rendschmidt','ALL',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Hye-jin Chang','CDS',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Bon-chan Ku','CDS',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Long Ma','CHN',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Ning Ding','CHN',2,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Justin Gatlin','USA',0,1,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Andre De Grasse','CAN',0,1,2, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Christophe Lemaitre','FRA',0,0,1, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Wayde Von Niekerk','AFS',1,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Kirani James','GRD',0,1,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('LaShawn Merritt','USA',1,0,1, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Eliud Kipchoge','KEN',1,0,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Feyisa Lilesa','ETH',0,1,0, 1);
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport) values('Galen Rupp','USA',0,0,1, 1);
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Justin Gatlin','USA',0,1,0, 1, TO_DATE('10/02/1982', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Andre De Grasse','CAN',0,1,2, 1, TO_DATE('10/11/1994', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Usain Bolt','JAM',3,0,0, 1, TO_DATE('21/08/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Christophe Lemaitre','FRA',0,0,1, 1, TO_DATE('11/06/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Wayde Van Niekerk','AFS',1,0,0, 1, TO_DATE('15/07/1992', 'DD/MM//YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Kirani James','GRD',0,1,0, 1, TO_DATE('1/09/1992','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('LaShawn Merritt','USA',1,0,1, 1, TO_DATE('27/06/1986','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Elaine Thompson','JAM',2,1,0, 2, TO_DATE('28/06/1992', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Tori Bowie','USA',1,1,1, 2, TO_DATE('27/08/1990','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Shelly-Ann Fraser-Pryce',' JAM',0,1,1, 2, TO_DATE('27/12/1986','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Dafne Schippers',' HOL',0,1,0, 2, TO_DATE('15/06/1992', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Shaunae Miller',' BAH',1,0,0, 2, TO_DATE('15/04/1994', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Allyson Felix','USA',2,1,0, 2, TO_DATE('18/11/1985', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Shericka Jackson',' JAM',0,1,1, 2, TO_DATE('16/07/1994', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Eliud Kipchoge','KEN',1,0,0, 1, TO_DATE('05/11/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Feyisa Lilesa','ETH',0,1,0, 1, TO_DATE('01/02/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Galen Rupp','USA',0,0,1, 1, TO_DATE('08/05/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Jemima Sumgong',' KEN',1,0,0, 2, TO_DATE('21/12/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Eunice Jepkirui Kirwa',' BRN',0,1,0, 2, TO_DATE('20/05/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Mare Dibaba',' ETH',0,0,1, 2, TO_DATE('20/10/1989', 'DD/MM/YYYY'));
+
+--Pour calculer le total de nb_medailles
+update athlete set nb_medailles_total=(select (a.nb_medailles_or+a.nb_medailles_argent+a.nb_medailles_bronze) from athlete a where a.id_athlete = athlete.id_athlete);
 
 -- EpreuveIndividuelle
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('100m (H)', 1);
@@ -236,3 +223,23 @@ insert into sport (nom_sport, categorie) values ('Volley-ball', 'Hommes');
 insert into sport (nom_sport, categorie) values ('Volley-ball', 'Femmes');
 insert into sport (nom_sport, categorie) values ('Water polo', 'Hommes');
 insert into sport (nom_sport, categorie) values ('Water polo', 'Femmes');
+
+--Equipes
+insert into equipe(code_pays, id_sport) values('DAN', 35); --pour handball hommes
+insert into equipe(code_pays, id_sport) values('FRA', 35);
+insert into equipe(code_pays, id_sport) values('ALL', 35);
+insert into equipe(code_pays, id_sport) values('RUS', 36); --pour handball femmes
+insert into equipe(code_pays, id_sport) values('FRA', 36);
+insert into equipe(code_pays, id_sport) values('NOR', 36);
+
+--EpreuveCollective
+insert into epreuvecollective (id_sport) values (35);
+insert into epreuvecollective (id_sport) values (36);
+
+--Equipe_EpreuveCollective
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 1, 'or');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 2, 'argent');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 3, 'bronze');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 4, 'or');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 5, 'argent');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 6, 'bronze');
