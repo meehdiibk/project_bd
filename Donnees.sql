@@ -246,6 +246,47 @@ insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_me
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Chantal Van Landeghem','CAN',0,0,1, 46, TO_DATE('05/03/1994', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Taylor Ruck','CAN',0,0,2, 46, TO_DATE('28/05/2000', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Michelle Williams','CAN',0,0,1, 46, TO_DATE('02/01/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Conor Dwyer','USA',1,0,1, 45, TO_DATE('10/01/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Francis Haas','USA',1,0,0, 45, TO_DATE('13/12/1996','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Ryan Lochte','USA',1,0,0, 45, TO_DATE('03/08/1984','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Clark Smith','USA',1,0,0, 45, TO_DATE('17/04/1995','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Jack Conger','USA',1,0,0, 45,TO_DATE('26/09/1994','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Gunnar Bentz','USA',1,0,0, 45, TO_DATE('03/01/1996','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Stephen Milne','GBR',0,1,0, 45, TO_DATE('29/04/1994', 'DD/MM/YYYY '));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Duncan Scott','GBR',0,2,0, 45, TO_DATE('06/05/1997', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Daniel Wallace','GBR',0,1,0, 45, TO_DATE('14/04/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('James Guy','GBR',0,2,0, 45, TO_DATE('26/11/1995', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Robert Renwick','GBR',0,1,0, 45, TO_DATE('21/07/1988','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Naito Ehara','JAP',0,0,1, 45, TO_DATE('30/07/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Yuki Kobori','JAP',0,0,1, 45, TO_DATE('25/11/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Takeshi Matsuda','JAP',0,0,1, 45, TO_DATE('23/06/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Leah Smith','USA',1,0,1, 46, TO_DATE('19/04/1995', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Missy Franklin','USA',1,0,0, 46, TO_DATE('10/05/1995','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Melanie Margalis','USA',1,0,0, 46, TO_DATE('30/12/1991','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Cierra Runge','USA',1,0,0, 46, TO_DATE('07/03/1996','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Leah Neale','AUS',0,1,0, 46, TO_DATE('01/08/1995', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Bronte Barratt','AUS',0,1,0, 46, TO_DATE('08/02/1989','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Tamsin Cook','AUS',0,1,0, 46, TO_DATE('25/12/1998', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Jessica Ashwood','AUS',0,1,0, 46, TO_DATE('28/04/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Katerine Savard','CAN',0,0,1, 46, TO_DATE('26/05/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Brittany Maclean','CAN',0,0,1, 46, TO_DATE('03/03/1994', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Emily Overholt','CAN',0,0,1, 46, TO_DATE('04/10/1997', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Kennedy Goss','CAN',0,0,1, 46, TO_DATE('19/08/1996', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Ryan Murphy','USA',3,0,0, 45, TO_DATE('02/07/1995', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Cody Miller','USA',1,0,1, 45, TO_DATE('09/01/1992', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Chris Walker-Hebborn','GBR',0,1,0, 45, TO_DATE('01/07/1990','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Adam Peaty','GBR',1,1,0, 45, TO_DATE('28/12/1994','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Mitchell Larkin','AUS',0,1,1, 45, TO_DATE('09/07/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Jake Packard','AUS',0,0,1, 45, TO_DATE('20/06/1994', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('David Morgan','AUS',0,0,1, 45, TO_DATE('01/01/1994', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Kathleen Baker','USA',1,1,0, 46, TO_DATE('28/02/1997','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Lilly King','USA',2,0,0, 46, TO_DATE('10/02/1997', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Emily Seebohm','AUS',0,1,0, 46, TO_DATE('05/06/1992','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Taylor Mckeown','AUS',0,1,0, 46, TO_DATE('17/03/1995', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Mie Ostergaard Nielsen','DAN',0,0,1, 46, TO_DATE('25/09/1996', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Rikke Moeller Pedersen','DAN',0,0,1, 46, TO_DATE('09/01/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Jeanette Ottesen-Gray','DAN',0,0,1, 46, TO_DATE('30/12/1987', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Pernille Blume','DAN',1,0,1, 46, TO_DATE('14/05/1994', 'DD/MM/YYYY'));
 
 
 --Pour calculer le total de nb_medailles
@@ -273,6 +314,10 @@ insert into epreuveindividuelle (nom_epreuve, id_sport) values('4x100m nage libr
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('4x100m nage libre (F)', 46);
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('200m nage libre (H)', 45);
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('200m nage libre (F)', 46);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('4x200m nage libre (H)', 45);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('4x200m nage libre (F)', 46);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('4x100m 4 nage (H)', 45);
+insert into epreuveindividuelle (nom_epreuve, id_sport) values('4x100m 4 nage (F)', 46);
 
 -- Athlete_EpreuveIndividuelle
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(3,1,'or','9mn81'); --100m hommes
@@ -353,6 +398,64 @@ insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, perfo
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(68,16,'bronze','3mn32"89');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(30,16,'bronze','3mn32"89');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(69,16,'bronze','3mn32"89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(70,19,'or','7mn00"66'); --4x200m nage libre hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(71,19,'or','7mn00"66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(72,19,'or','7mn00"66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,19,'or','7mn00"66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(73,19,'or','7mn00"66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(74,19,'or','7mn00"66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(75,19,'or','7mn00"66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(76,19,'argent','7mn03"13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(77,19,'argent','7mn03"13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(78,19,'argent','7mn03"13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(79,19,'argent','7mn03"13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(80,19,'argent','7mn03"13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(27,19,'bronze','7mn03"50');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(81,19,'bronze','7mn03"50');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(82,19,'bronze','7mn03"50');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(83,19,'bronze','7mn03"50');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(65,20,'or','7mn43"03'); --4x200m nage libre femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(84,20,'or','7mn43"03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(37,20,'or','7mn43"03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(62,20,'or','7mn43"03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(85,20,'or','7mn43"03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(86,20,'or','7mn43"03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(87,20,'or','7mn43"03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(88,20,'argent','7mn44"87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,20,'argent','7mn44"87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(89,20,'argent','7mn44"87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(90,20,'argent','7mn44"87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(91,20,'argent','7mn44"87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(92,20,'bronze','7mn45"39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(68,20,'bronze','7mn45"39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(93,20,'bronze','7mn45"39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(30,20,'bronze','7mn45"39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(94,20,'bronze','7mn45"39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(95,20,'bronze','7mn45"39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(96,21,'or','3mn27"95'); --4x100m 4 nage hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(97,21,'or','3mn27"95');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,21,'or','3mn27"95');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(40,21,'or','3mn27"95');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(98,21,'argent','3mn29"24');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(99,21,'argent','3mn29"24');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(79,21,'argent','3mn29"24');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(77,21,'argent','3mn29"24');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(100,21,'bronze','3mn29"93');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(101,21,'bronze','3mn29"93');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(102,21,'bronze','3mn29"93');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(51,21,'bronze','3mn29"93');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(103,22,'or','3mn53"13'); --4x100m 4 nage femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(104,22,'or','3mn53"13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(31,22,'or','3mn53"13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(60,22,'or','3mn53"13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(105,22,'argent','3mn55"00');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(106,22,'argent','3mn55"00');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,22,'argent','3mn55"00');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(58,22,'argent','3mn55"00');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(107,22,'bronze','3mn55"01');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(108,22,'bronze','3mn55"01');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(109,22,'bronze','3mn55"01');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(110,22,'bronze','3mn55"01');
 
 --Equipes
 insert into equipe(code_pays, id_sport) values('DAN', 35); --pour handball hommes
@@ -361,16 +464,18 @@ insert into equipe(code_pays, id_sport) values('ALL', 35);
 insert into equipe(code_pays, id_sport) values('RUS', 36); --pour handball femmes
 insert into equipe(code_pays, id_sport) values('FRA', 36);
 insert into equipe(code_pays, id_sport) values('NOR', 36);
+insert into equipe(code_pays, id_sport) values('POL', 35);
+insert into equipe(code_pays, id_sport) values('HOL', 36);
 
 --EpreuveCollective
 insert into epreuvecollective (id_sport) values (35);
 insert into epreuvecollective (id_sport) values (36);
 
 --Equipe_EpreuveCollective
-insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 1, 'or');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 1, 'or'); --handball hommes
 insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 2, 'argent');
 insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 3, 'bronze');
-insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 4, 'or');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 4, 'or'); --handball femmes
 insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 5, 'argent');
 insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 6, 'bronze');
 
