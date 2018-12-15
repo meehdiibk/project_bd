@@ -549,6 +549,12 @@ insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, perfo
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(29,18,'argent','1mn54"08');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,18,'bronze','1mn54"92');
 
+--EpreuveCollective
+insert into epreuvecollective (id_sport) values (35);
+insert into epreuvecollective (id_sport) values (36);
+insert into epreuvecollective (id_sport) values (25);
+insert into epreuvecollective (id_sport) values (26);
+
 --Equipes
 insert into equipe(code_pays, id_sport) values('DAN', 35); --pour handball hommes
 insert into equipe(code_pays, id_sport) values('FRA', 35);
@@ -558,10 +564,16 @@ insert into equipe(code_pays, id_sport) values('FRA', 36);
 insert into equipe(code_pays, id_sport) values('NOR', 36);
 insert into equipe(code_pays, id_sport) values('POL', 35);
 insert into equipe(code_pays, id_sport) values('HOL', 36);
+insert into equipe(code_pays, id_sport) values('BRE', 25); --pour football hommes
+insert into equipe(code_pays, id_sport) values('ALL', 25);
+insert into equipe(code_pays, id_sport) values('NIG', 25);
+insert into equipe(code_pays, id_sport) values('HON', 25);
+insert into equipe(code_pays, id_sport) values('ALL', 26); --pour football femmes
+insert into equipe(code_pays, id_sport) values('SUE', 26);
+insert into equipe(code_pays, id_sport) values('CAN', 26);
+insert into equipe(code_pays, id_sport) values('BRE', 26);
 
---EpreuveCollective
-insert into epreuvecollective (id_sport) values (35);
-insert into epreuvecollective (id_sport) values (36);
+
 
 --Equipe_EpreuveCollective
 insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 1, 'or'); --handball hommes
@@ -570,9 +582,19 @@ insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(1, 
 insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 4, 'or'); --handball femmes
 insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 5, 'argent');
 insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(2, 6, 'bronze');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(3, 9, 'or'); --football hommes
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(3, 10, 'argent');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(3, 11, 'bronze');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(4, 13, 'or'); --football femmes
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(4, 14, 'argent');
+insert into equipe_epreuvecollective(id_epreuve, id_equipe, medaille) values(4, 15, 'bronze');
 
 --Resultats_Equipe
 insert into resultats_equipe(id_epreuve, id_gagnant, id_perdant, score) values(1,1,2,'28-26');
 insert into resultats_equipe(id_epreuve, id_gagnant, id_perdant, score) values(1,3,7,'31-25');
 insert into resultats_equipe(id_epreuve, id_gagnant, id_perdant, score) values(2,4,2,'22-19');
 insert into resultats_equipe(id_epreuve, id_gagnant, id_perdant, score) values(2,6,8,'26-36');
+insert into resultats_equipe(id_epreuve, id_gagnant, id_perdant, score) values(3,9,10,'6-5');
+insert into resultats_equipe(id_epreuve, id_gagnant, id_perdant, score) values(3,11,12,'3-2');
+insert into resultats_equipe(id_epreuve, id_gagnant, id_perdant, score) values(4,13,14,'2-1');
+insert into resultats_equipe(id_epreuve, id_gagnant, id_perdant, score) values(4,15,16,'2-1');
