@@ -287,7 +287,93 @@ insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_me
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Rikke Moeller Pedersen','DAN',0,0,1, 46, TO_DATE('09/01/1989', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Jeanette Ottesen-Gray','DAN',0,0,1, 46, TO_DATE('30/12/1987', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Pernille Blume','DAN',1,0,1, 46, TO_DATE('14/05/1994', 'DD/MM/YYYY'));
-
+insert into Athlete(nom, code_pays, id_sport, age) values('Niklas Landin Jacobsen','DAN',35, TO_DATE('19/12/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Mads Christiansen','DAN',35, TO_DATE('03/05/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Mads Mensah Larsen','DAN',35, TO_DATE('12/08/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Casper Ulrich Mortensen','DAN',35, TO_DATE('14/12/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Jesper Nøddesbo','DAN',35, TO_DATE('23/10/1980', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Jannick Green','DAN',35, TO_DATE('29/09/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Lasse Svan Hansen','DAN',35, TO_DATE('31/08/1983', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Rene Toft Hansen','DAN',35, TO_DATE('11/01/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Henrik Møllgaard','DAN',35, TO_DATE('02/01/1985', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Kasper Søndergaard','DAN',35, TO_DATE('09/06/1981', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Henrik Toft Hansen','DAN',35, TO_DATE('18/12/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Mikkel Hansen','DAN',35, TO_DATE('22/10/1987', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Morten Olsen','DAN',35, TO_DATE('11/10/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport, age) values('Michael Damgaard','DAN',35, TO_DATE('18/03/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Daniel Narcisse','FRA',35, TO_DATE('16/12/1979', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Vincent Gérard','FRA',35, TO_DATE('16/12/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Nikola Karabatić','FRA',35, TO_DATE('11/4/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Kentin Mahé','FRA',35, TO_DATE('22/5/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Mathieu Grébille','FRA',35, TO_DATE('6/10/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Thierry Omeyer','FRA',35, TO_DATE('2/11/1976', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Timothey NGuessan','FRA',35, TO_DATE('18/9/1992', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Luc Abalo','FRA',35, TO_DATE('6/9/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Cédric Sorhaindo','FRA',35, TO_DATE('7/6/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Michaël Guigou','FRA',35, TO_DATE('28/1/1982', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Luka Karabatić','FRA',35, TO_DATE('19/4/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Ludovic Fabregas','FRA',35, TO_DATE('1/7/1996', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Adrien Dipanda','FRA',35, TO_DATE('3/5/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Valentin Porte','FRA',35, TO_DATE('7/9/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Valentin Porte','FRA',35, TO_DATE('7/9/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Uwe Gensheimer','ALL',35, TO_DATE('26/10/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Finn Lemke','ALL',35, TO_DATE('30/4/1992', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Patrick Wiencek','ALL',35, TO_DATE('22/3/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Tobias Reichmann','ALL',35, TO_DATE('27/5/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Fabian Wiede','ALL',35, TO_DATE('8/2/1994', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Silvio Heinevetter','ALL',35, TO_DATE('21/10/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Hendrik Pekeler','ALL',35, TO_DATE('2/7/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Steffen Weinhold','ALL',35, TO_DATE('19/7/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Martin Strobel','ALL',35, TO_DATE('5/6/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Patrick Groetzki','ALL',35, TO_DATE('4/7/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Kai Häfner','ALL',35, TO_DATE('10/7/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Andreas Wolff','ALL',35, TO_DATE('3/3/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Julius Kühn','ALL',35, TO_DATE('1/4/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Christian Dissinger','ALL',35, TO_DATE('15/11/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Paul Drux','ALL',35, TO_DATE('7/2/1995', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Anna Sedoykina','RUS',36, TO_DATE('1/8/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Polina Kuznetsova','RUS',36, TO_DATE('10/6/1987', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Daria Dmitrieva','RUS',36, TO_DATE('9/8/1995', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Anna Sen','RUS',36, TO_DATE('3/2/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Olga Akopyan','RUS',36, TO_DATE('4/3/1985', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Anna Vyakhireva','RUS',36, TO_DATE('13/3/1995', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Marina Sudakova','RUS',36, TO_DATE('17/2/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Vladlena Bobrovnikova','RUS',36, TO_DATE('24/10/1987', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Victoria Zhilinskayte','RUS',36, TO_DATE('6/3/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Yekaterina Marennikova','RUS',36, TO_DATE('29/4/1982', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Irina Bliznova','RUS',36, TO_DATE('6/10/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Ekaterina Ilina','RUS',36, TO_DATE('7/3/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Maya Petrova','RUS',36, TO_DATE('26/5/1982', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Tatyana Yerokhina','RUS',36, TO_DATE('7/9/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Victoriya Kalinina','RUS',36, TO_DATE('8/12/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Laura Glauser','FRA',36, TO_DATE('20/8/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Blandine Dancette','FRA',36, TO_DATE('14/2/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Camille Ayglon','FRA',36, TO_DATE('21/5/1985', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Allison Pineau','FRA',36, TO_DATE('2/5/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Laurisa Landre','FRA',36, TO_DATE('27/10/1985', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Grace Zaadi','FRA',36, TO_DATE('7/7/1993', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Amandine Leynaud','FRA',36, TO_DATE('2/5/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Manon Houette','FRA',36, TO_DATE('2/7/1992', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Siraba Dembélé','FRA',36, TO_DATE('28/6/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Chloé Bulleux','FRA',36, TO_DATE('18/11/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Béatrice Edwige','FRA',36, TO_DATE('3/10/1988', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Estelle Nze Minko','FRA',36, TO_DATE('11/8/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Gnonsiane Niombla','FRA',36, TO_DATE('9/7/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Alexandra Lacrabère','FRA',36, TO_DATE('27/4/1987', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Kari Aalvik Grimsbø','NOR',36, TO_DATE('4/1/1985', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Mari Molid','NOR',36, TO_DATE('8/8/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Emilie Hegh Arntzen','NOR',36, TO_DATE('1/1/1994', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Veronica Kristiansen','NOR',36, TO_DATE('10/7/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Ida Alstad','NOR',36, TO_DATE('13/6/1985', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Heidi Løke','NOR',36, TO_DATE('12/12/1982', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Nora Mørk','NOR',36, TO_DATE('5/4/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Stine Bredal Oftedal','NOR',36, TO_DATE('25/9/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Marit Malm Frafjord','NOR',36, TO_DATE('25/11/1985', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Katrine Lunde','NOR',36, TO_DATE('30/3/1980', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Linn-Kristin Riegelhuth Koren','NOR',36, TO_DATE('1/8/1984', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Amanda Kurtović','NOR',36, TO_DATE('25/7/1991', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Camilla Herrem','NOR',36, TO_DATE('8/10/1986', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Sanna Solberg','NOR',36, TO_DATE('16/6/1990', 'DD/MM/YYYY'));
 
 --Pour calculer le total de nb_medailles
 update athlete set nb_medailles_total=(select (a.nb_medailles_or+a.nb_medailles_argent+a.nb_medailles_bronze) from athlete a where a.id_athlete = athlete.id_athlete);
@@ -456,6 +542,12 @@ insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, perfo
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(108,22,'bronze','3mn55"01');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(109,22,'bronze','3mn55"01');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(110,22,'bronze','3mn55"01');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(111,17,'or','1mn44"65'); --200m nage libre hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(24,17,'argent','1mn45"20');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(70,17,'bronze','1mn45"23');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(62,18,'or','1mn53"73'); --200m nage libre femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(29,18,'argent','1mn54"08');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,18,'bronze','1mn54"92');
 
 --Equipes
 insert into equipe(code_pays, id_sport) values('DAN', 35); --pour handball hommes
