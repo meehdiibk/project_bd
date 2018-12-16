@@ -556,6 +556,16 @@ insert into epreuvecollective (id_sport) values (35);
 insert into epreuvecollective (id_sport) values (36);
 insert into epreuvecollective (id_sport) values (25);
 insert into epreuvecollective (id_sport) values (26);
+insert into epreuvecollective (id_sport) values (9);
+insert into epreuvecollective (id_sport) values (10);
+insert into epreuvecollective (id_sport) values (11);
+insert into epreuvecollective (id_sport) values (12);
+insert into epreuvecollective (id_sport) values (75);
+insert into epreuvecollective (id_sport) values (76);
+insert into epreuvecollective (id_sport) values (77);
+insert into epreuvecollective (id_sport) values (78);
+insert into epreuvecollective (id_sport) values (55);
+insert into epreuvecollective (id_sport) values (56);
 
 --Equipes
 insert into equipe(code_pays, id_sport) values('DAN', 35); --pour handball hommes
