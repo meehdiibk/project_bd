@@ -186,7 +186,7 @@ insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_me
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('LaShawn Merritt','USA',1,0,1, 1, TO_DATE('27/06/1986','DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Elaine Thompson','JAM',2,1,0, 2, TO_DATE('28/06/1992', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Tori Bowie','USA',1,1,1, 2, TO_DATE('27/08/1990','DD/MM/YYYY'));
-insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Shelly-Ann Fraser-Pryce',' JAM',0,1,1, 2, TO_DATE('27/12/1986','DD/MM/YYYY'));
+insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Shelly-Ann Fraser-Pryce','JAM',0,1,1, 2, TO_DATE('27/12/1986','DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Dafne Schippers','HOL',0,1,0, 2, TO_DATE('15/06/1992', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Shaunae Miller','BAH',1,0,0, 2, TO_DATE('15/04/1994', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Allyson Felix','USA',2,1,0, 2, TO_DATE('18/11/1985', 'DD/MM/YYYY'));
@@ -572,9 +572,9 @@ insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, perfo
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,18,'bronze','00:01:54.92');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(79,17,'00:01:45.49');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(27,17,'00:01:45.90');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(214,17,'00:01:45.58');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(215,17,'00:01:45.84');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(216,17,'00:01:45.91');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(215,17,'00:01:45.58');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(216,17,'00:01:45.84');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(217,17,'00:01:45.91');
 
 --EpreuveCollective
 insert into epreuvecollective (id_sport) values (35);
