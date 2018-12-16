@@ -64,4 +64,4 @@ ae where a.id_athlete=ae.id_athlete and a.id_athlete in (select x.id_athlete fro
 select a.nom, a.code_pays,count(ae.id_epreuve) from athlete a, athlete_epreuveindividuelle ae where a.id_athlete = ae.id_athlete and exists (select * from athlete_epreuveindividuelle x where x.id_athlete=a.id_athlete and x.medaille is not null) group by a.nom, a.code_pays;
 
 --3
-select p.nom, avg((DATE_PART('year', '2016-01-01'::date) - DATE_PART('year', a.age::date))) from pays p, athlete a group by a.code_pays;
+select p.nom, avg((DATE_PART('year', '2016-01-01'::date) - DATE_PART('year', a.age::date))) from pays p, athlete a where p.code_pays=a.code_pays group by a.code_pays, p.nom;
