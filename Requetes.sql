@@ -36,7 +36,7 @@ select a.nom, a.code_pays, ae.performance from athlete a, athlete_epreuveindivid
 -- 2
 create view id as select distinct e.id_sport from epreuveindividuelle e;
 select count(*) from id;
-select distinct code_pays, count(distinct i.id_sport)
+select distinct code_pays
 from athlete a, id i
 where i.id_sport=a.id_sport
 group by code_pays
@@ -48,3 +48,20 @@ create view femmes as select count(*) as nb_femmes from athlete a, sport s where
 select  nb_femmes*100/total as pourcentage from tout, femmes;
 drop view tout;
 drop view femmes;
+
+-- Requêtes supplémentaires
+-- 1
+select x.nom, x.code_pays from athlete x
+where x.id_athlete in(
+select a.id_athlete from athlete a
+except
+select ae.id_athlete from athlete_epreuveindividuelle ae);
+
+-- 2
+select a.nom, a.code_pays, count(ae.id_epreuve) from athlete a, athlete_epreuveindividuelle
+ae where a.id_athlete=ae.id_athlete and a.id_athlete in (select x.id_athlete from athlete_epreuveindividuelle x where x.medaille is not null)group by a.nom, a.code_pays;
+  -- Autre manière de faire la même requête
+select a.nom, a.code_pays,count(ae.id_epreuve) from athlete a, athlete_epreuveindividuelle ae where a.id_athlete = ae.id_athlete and exists (select * from athlete_epreuveindividuelle x where x.id_athlete=a.id_athlete and x.medaille is not null) group by a.nom, a.code_pays;
+
+--3
+select p.nom, avg((DATE_PART('year', '2016-01-01'::date) - DATE_PART('year', a.age::date))) from pays p, athlete a group by a.code_pays;
