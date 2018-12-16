@@ -33,6 +33,15 @@ select distinct e.* from epreuveindividuelle e, athlete a, athlete_epreuveindivi
 select ae.* from athlete_epreuveindividuelle ae, epreuveindividuelle e where e.nom_epreuve like '100m%' and e.id_epreuve=ae.id_epreuve and  performance<'00:00:10';
 
 --Difficulte ***
+-- 2
+create view id as select distinct e.id_sport from epreuveindividuelle e;
+select count(*) from id;
+select distinct code_pays, count(distinct i.id_sport)
+from athlete a, id i
+where i.id_sport=a.id_sport
+group by code_pays
+having count(distinct i.id_sport)=(select count(*) from id);
+drop view id;
 -- 4
 create view tout as select count(*) as total from athlete where nb_medailles_total<>0;
 create view femmes as select count(*) as nb_femmes from athlete a, sport s where categorie='Femmes' and s.id_sport=a.id_sport and nb_medailles_total<>0;
