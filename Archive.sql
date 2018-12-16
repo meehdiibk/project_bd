@@ -70,7 +70,7 @@ CREATE TABLE EpreuveIndividuelle (
 CREATE TABLE Athlete_EpreuveIndividuelle (
   id_athlete integer not null,
   id_epreuve integer not null,
-  medaille text not null,
+  medaille text default null,
   performance time,
   FOREIGN KEY(id_athlete) REFERENCES Athlete(id_athlete),
   FOREIGN KEY(id_epreuve) REFERENCES EpreuveIndividuelle(id_epreuve)

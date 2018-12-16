@@ -8,20 +8,20 @@ SELECT A.nom, A.code_pays, medaille FROM Athlete A, EpreuveIndividuelle EI, Athl
 -- 3
 SELECT a.* FROM Athlete a, Sport s WHERE s.nom_sport='Handball' and s.categorie='Femmes' and  a.id_sport=s.id_sport and (DATE_PART('year', '2016-01-01'::date) - DATE_PART('year', a.age::date)<25);
 -- 4
-select * from athlete a, sport s, athlete_epreuveindividuelle ae, epreuveindividuelle e where a.nom like '%Phelps' and a.id_athlete=ae.id_athlete and ae.id_epreuve=e.id_epreuve and e.id_sport=s.id_sport;
+select a.nom, e.nom_epreuve, ae.medaille, ae.performance from athlete a, sport s, athlete_epreuveindividuelle ae, epreuveindividuelle e where a.nom like '%Phelps' and a.id_athlete=ae.id_athlete and ae.id_epreuve=e.id_epreuve and e.id_sport=s.id_sport;
 -- 5
-select * from epreuvecollective e, sport s where e.id_sport=s.id_sport;
+select e.id_epreuve, s.nom_sport, s.categorie from epreuvecollective e, sport s where e.id_sport=s.id_sport;
 -- 6
 select nom_epreuve as epreuve, min(performance) as meilleur_temps from athlete_epreuveindividuelle ae, epreuveindividuelle e, athlete where e.nom_epreuve like 'marathon%' and e.id_epreuve=ae.id_epreuve and athlete.id_athlete=ae.id_athlete group by nom_epreuve;
 
 --Difficulte **
 -- 1
-select e.nom_epreuve,avg(performance) from athlete_epreuveindividuelle ae, epreuveindividuelle e where e.nom_epreuve like '200m nage libre%' and e.id_epreuve=ae.id_epreuve group by e.id_epreuve;
+select e.nom_epreuve, a.code_pays, avg(performance) from athlete a, athlete_epreuveindividuelle ae, epreuveindividuelle e where e.nom_epreuve like '200m nage libre%' and e.id_epreuve=ae.id_epreuve and a.id_athlete=ae.id_athlete group by e.id_epreuve, a.code_pays;
 -- 2
 select * from pays;
 -- 3
-create view medaille_or as select id_epreuve, nom, a.code_pays from athlete a, athlete_epreuveindividuelle ae where medaille='or' and ae.id_athlete=a.id_athlete;
-create view medaille_argent as select id_epreuve, nom, a.code_pays from athlete a, athlete_epreuveindividuelle ae where medaille='argent' and ae.id_athlete=a.id_athlete;
+create view medaille_or as select id_epreuve, nom as gagnant_or, a.code_pays from athlete a, athlete_epreuveindividuelle ae where medaille='or' and ae.id_athlete=a.id_athlete;
+create view medaille_argent as select id_epreuve, nom as gagnant_argent, a.code_pays from athlete a, athlete_epreuveindividuelle ae where medaille='argent' and ae.id_athlete=a.id_athlete;
 select * from medaille_or o left join medaille_argent a on a.id_epreuve=o.id_epreuve;
 drop view medaille_or;
 drop view medaille_argent;
