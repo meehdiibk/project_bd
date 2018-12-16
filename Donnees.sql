@@ -374,6 +374,8 @@ insert into Athlete(nom, code_pays, id_sport,age) values('Linn-Kristin Riegelhut
 insert into Athlete(nom, code_pays, id_sport,age) values('Amanda Kurtović','NOR',36, TO_DATE('25/7/1991', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays, id_sport,age) values('Camilla Herrem','NOR',36, TO_DATE('8/10/1986', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays, id_sport,age) values('Sanna Solberg','NOR',36, TO_DATE('16/6/1990', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Eleonora Giorgi','ITA',2, TO_DATE('14/09/1989', 'DD/MM/YYYY'));
+insert into Athlete(nom, code_pays, id_sport,age) values('Ayomide Folorunso','ITA',2, TO_DATE('17/10/1996', 'DD/MM/YYYY'));
 
 --Pour calculer le total de nb_medailles
 update athlete set nb_medailles_total=(select (a.nb_medailles_or+a.nb_medailles_argent+a.nb_medailles_bronze) from athlete a where a.id_athlete = athlete.id_athlete);
@@ -406,148 +408,148 @@ insert into epreuveindividuelle (nom_epreuve, id_sport) values('4x100m 4 nage (H
 insert into epreuveindividuelle (nom_epreuve, id_sport) values('4x100m 4 nage (F)', 46);
 
 -- Athlete_EpreuveIndividuelle
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(3,1,'or','9mn81'); --100m hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(1,1,'argent','9mn89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(2,1,'bronze','9mn91');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(3,3,'or','19mn78'); --200m hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(2,3,'argent','20mn02');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(4,3,'bronze','20mn12');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(5,5,'or','43mn03'); --400m hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(6,5,'argent','43mn76');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(7,5,'bronze','43mn85');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(15,7,'or','2h08mn44'); --marathon hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(16,7,'argent','2h09mn54');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(17,7,'bronze','2h10mn05');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(8,2,'or','10mn71'); --100m femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(9,2,'argent','10mn83');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(10,2,'bronze','10mn86');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(8,4,'or','21mn78'); --200m femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(11,4,'argent','21mn88');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(9,4,'bronze','22mn15');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(12,6,'or','49mn44'); --400m femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(13,6,'argent','49mn51');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(14,6,'bronze','49mn85');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(18,8,'or','2h24mn04'); --marathon femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(19,8,'argent','2h24mn13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(20,8,'bronze','2h24mn30');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(21,9,'or','50"39'); --100m papillon hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,9,'argent','51"14');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(23,9,'argent','51"14');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(24,9,'argent','51"14');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,11,'or','1mn53"36'); --100m papillon hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(25,11,'argent','1mn53"40');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(26,11,'bronze','1mn53"62');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,13,'or','1mn54"66'); --200m 4 nages hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(27,13,'argent','1mn56"61');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(28,13,'bronze','1mn57"05');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(29,10,'or','55"48'); --100m papillon femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(30,10,'argent','56"46');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(31,10,'argent','56"63');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(32,12,'or','2mn04"85'); --100m papillon femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(33,12,'argent','2mn04"88');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(34,12,'bronze','2mn05"20');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(35,14,'or','2mn05"58'); --200m 4 nages femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(36,14,'argent','2mn06"88');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(37,14,'bronze','2mn08"79');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(38,15,'or','3mn09"92'); --4x100m nage libre hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,15,'or','3mn09"92');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(39,15,'or','3mn09"92');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(40,15,'or','3mn09"92');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(41,15,'or','3mn09"92');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(42,15,'or','3mn09"92');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(43,15,'or','3mn09"92');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(44,15,'argent','3mn10"53');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(45,15,'argent','3mn10"53');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(46,15,'argent','3mn10"53');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(47,15,'argent','3mn10"53');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(48,15,'argent','3mn10"53');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(49,15,'argent','3mn10"53');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(50,15,'bronze','3mn11"37');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(51,15,'bronze','3mn11"37');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(52,15,'bronze','3mn11"37');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(53,15,'bronze','3mn11"37');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(54,15,'bronze','3mn11"37');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,16,'or','3mn30"65'); --4x100m nage libre femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(56,16,'or','3mn30"65');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(57,16,'or','3mn30"65');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(58,16,'or','3mn30"65');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(59,16,'or','3mn30"65');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(60,16,'argent','3mn31"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(61,16,'argent','3mn31"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(31,16,'argent','3mn31"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(62,16,'argent','3mn31"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(63,16,'argent','3mn31"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(64,16,'argent','3mn31"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(65,16,'argent','3mn31"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(66,16,'bronze','3mn32"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(67,16,'bronze','3mn32"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(68,16,'bronze','3mn32"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(30,16,'bronze','3mn32"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(69,16,'bronze','3mn32"89');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(70,19,'or','7mn00"66'); --4x200m nage libre hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(71,19,'or','7mn00"66');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(72,19,'or','7mn00"66');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,19,'or','7mn00"66');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(73,19,'or','7mn00"66');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(74,19,'or','7mn00"66');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(75,19,'or','7mn00"66');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(76,19,'argent','7mn03"13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(77,19,'argent','7mn03"13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(78,19,'argent','7mn03"13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(79,19,'argent','7mn03"13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(80,19,'argent','7mn03"13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(27,19,'bronze','7mn03"50');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(81,19,'bronze','7mn03"50');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(82,19,'bronze','7mn03"50');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(83,19,'bronze','7mn03"50');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(65,20,'or','7mn43"03'); --4x200m nage libre femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(84,20,'or','7mn43"03');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(37,20,'or','7mn43"03');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(62,20,'or','7mn43"03');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(85,20,'or','7mn43"03');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(86,20,'or','7mn43"03');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(87,20,'or','7mn43"03');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(88,20,'argent','7mn44"87');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,20,'argent','7mn44"87');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(89,20,'argent','7mn44"87');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(90,20,'argent','7mn44"87');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(91,20,'argent','7mn44"87');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(92,20,'bronze','7mn45"39');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(68,20,'bronze','7mn45"39');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(93,20,'bronze','7mn45"39');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(30,20,'bronze','7mn45"39');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(94,20,'bronze','7mn45"39');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(95,20,'bronze','7mn45"39');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(96,21,'or','3mn27"95'); --4x100m 4 nage hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(97,21,'or','3mn27"95');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,21,'or','3mn27"95');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(40,21,'or','3mn27"95');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(98,21,'argent','3mn29"24');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(99,21,'argent','3mn29"24');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(79,21,'argent','3mn29"24');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(77,21,'argent','3mn29"24');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(100,21,'bronze','3mn29"93');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(101,21,'bronze','3mn29"93');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(102,21,'bronze','3mn29"93');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(51,21,'bronze','3mn29"93');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(103,22,'or','3mn53"13'); --4x100m 4 nage femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(104,22,'or','3mn53"13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(31,22,'or','3mn53"13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(60,22,'or','3mn53"13');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(105,22,'argent','3mn55"00');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(106,22,'argent','3mn55"00');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,22,'argent','3mn55"00');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(58,22,'argent','3mn55"00');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(107,22,'bronze','3mn55"01');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(108,22,'bronze','3mn55"01');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(109,22,'bronze','3mn55"01');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(110,22,'bronze','3mn55"01');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(111,17,'or','1mn44"65'); --200m nage libre hommes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(24,17,'argent','1mn45"20');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(70,17,'bronze','1mn45"23');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(62,18,'or','1mn53"73'); --200m nage libre femmes
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(29,18,'argent','1mn54"08');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,18,'bronze','1mn54"92');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(3,1,'or', '00:00:09.81'); --100m hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(1,1,'argent','00:00:09.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(2,1,'bronze','00:00:09.91');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(3,3,'or','00:00:19.78'); --200m hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(2,3,'argent','00:00:20.02');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(4,3,'bronze','00:00:20.12');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(5,5,'or','00:00:43.03'); --400m hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(6,5,'argent','00:00:43.76');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(7,5,'bronze','00:00:43.85');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(15,7,'or','02:08:44'); --marathon hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(16,7,'argent','02:09:54');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(17,7,'bronze','2:10:05');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(8,2,'or','00:00:10.71'); --100m femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(9,2,'argent','00:00:10.83');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(10,2,'bronze','00:00:10.86');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(8,4,'or','00:00:21.78'); --200m femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(11,4,'argent','00:00:21.88');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(9,4,'bronze','00:00:22.15');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(12,6,'or','00:00:49.44'); --400m femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(13,6,'argent','00:00:49.51');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(14,6,'bronze','00:00:49.85');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(18,8,'or','02:24:04'); --marathon femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(19,8,'argent','02:24:13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(20,8,'bronze','02:24:30');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(21,9,'or','00:00:50.39'); --100m papillon hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,9,'argent','00:00:51.14');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(23,9,'argent','00:00:51.14');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(24,9,'argent','00:00:51.14');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,11,'or','00:01:53.36'); --100m papillon hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(25,11,'argent','00:01:53.40');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(26,11,'bronze','00:01:53.62');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,13,'or','00:01:54.66'); --200m 4 nages hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(27,13,'argent','00:01:56.61');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(28,13,'bronze','00:01:57.05');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(29,10,'or','00:00:55.48'); --100m papillon femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(30,10,'argent','00:00:56.46');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(31,10,'argent','00:00:56.63');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(32,12,'or','00:02:04.85'); --100m papillon femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(33,12,'argent','00:02:04.88');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(34,12,'bronze','00:02:05.20');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(35,14,'or','00:02:05.58'); --200m 4 nages femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(36,14,'argent','00:02:06.88');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(37,14,'bronze','00:02:08.79');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(38,15,'or','00:03:09.92'); --4x100m nage libre hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,15,'or','00:03:09.92');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(39,15,'or','00:03:09.92');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(40,15,'or','00:03:09.92');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(41,15,'or','00:03:09.92');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(42,15,'or','00:03:09.92');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(43,15,'or','00:03:09.92');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(44,15,'argent','00:03:10.53');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(45,15,'argent','00:03:10.53');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(46,15,'argent','00:03:10.53');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(47,15,'argent','00:03:10.53');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(48,15,'argent','00:03:10.53');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(49,15,'argent','00:03:10.53');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(50,15,'bronze','00:03:11.37');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(51,15,'bronze','00:03:11.37');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(52,15,'bronze','00:03:11.37');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(53,15,'bronze','00:03:11.37');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(54,15,'bronze','00:03:11.37');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,16,'or','00:03:30.65'); --4x100m nage libre femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(56,16,'or','00:03:30.65');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(57,16,'or','00:03:30.65');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(58,16,'or','00:03:30.65');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(59,16,'or','00:03:30.65');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(60,16,'argent','00:03:31.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(61,16,'argent','00:03:31.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(31,16,'argent','00:03:31.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(62,16,'argent','00:03:31.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(63,16,'argent','00:03:31.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(64,16,'argent','00:03:31.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(65,16,'argent','00:03:31.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(66,16,'bronze','00:03:32.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(67,16,'bronze','00:03:32.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(68,16,'bronze','00:03:32.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(30,16,'bronze','00:03:32.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(69,16,'bronze','00:03:32.89');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(70,19,'or','00:07:00.66'); --4x200m nage libre hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(71,19,'or','00:07:00.66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(72,19,'or','00:07:00.66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,19,'or','00:07:00.66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(73,19,'or','00:07:00.66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(74,19,'or','00:07:00.66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(75,19,'or','00:07:00.66');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(76,19,'argent','00:07:03.13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(77,19,'argent','00:07:03.13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(78,19,'argent','00:07:03.13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(79,19,'argent','00:07:03.13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(80,19,'argent','00:07:03.13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(27,19,'bronze','00:07:03.50');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(81,19,'bronze','00:07:03.50');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(82,19,'bronze','00:07:03.50');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(83,19,'bronze','00:07:03.50');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(65,20,'or','00:07:43.03'); --4x200m nage libre femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(84,20,'or','00:07:43.03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(37,20,'or','00:07:43.03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(62,20,'or','00:07:43.03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(85,20,'or','00:07:43.03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(86,20,'or','00:07:43.03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(87,20,'or','00:07:43.03');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(88,20,'argent','00:07:44.87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,20,'argent','00:07:44.87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(89,20,'argent','00:07:44.87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(90,20,'argent','00:07:44.87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(91,20,'argent','00:07:44.87');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(92,20,'bronze','00:07:45.39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(68,20,'bronze','00:07:45.39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(93,20,'bronze','00:07:45.39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(30,20,'bronze','00:07:45.39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(94,20,'bronze','00:07:45.39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(95,20,'bronze','00:07:45.39');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(96,21,'or','00:03:27.95'); --4x100m 4 nage hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(97,21,'or','00:03:27.95');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(22,21,'or','00:03:27.95');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(40,21,'or','00:03:27.95');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(98,21,'argent','00:03:29.24');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(99,21,'argent','00:03:29.24');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(79,21,'argent','00:03:29.24');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(77,21,'argent','00:03:29.24');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(100,21,'bronze','00:03:29.93');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(101,21,'bronze','00:03:29.93');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(102,21,'bronze','00:03:29.93');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(51,21,'bronze','00:03:29.93');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(103,22,'or','00:03:53.13'); --4x100m 4 nage femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(104,22,'or','00:03:53.13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(31,22,'or','00:03:53.13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(60,22,'or','00:03:53.13');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(105,22,'argent','00:03:55.00');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(106,22,'argent','00:03:55.00');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,22,'argent','00:03:55.00');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(58,22,'argent','00:03:55.00');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(107,22,'bronze','00:03:55.01');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(108,22,'bronze','00:03:55.01');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(109,22,'bronze','00:03:55.01');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(110,22,'bronze','00:03:55.01');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(111,17,'or','00:01:44.65'); --200m nage libre hommes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(24,17,'argent','00:01:45.20');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(70,17,'bronze','00:01:45.23');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(62,18,'or','00:01:53.73'); --200m nage libre femmes
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(29,18,'argent','00:01:54.08');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,18,'bronze','00:01:54.92');
 
 --EpreuveCollective
 insert into epreuvecollective (id_sport) values (35);
