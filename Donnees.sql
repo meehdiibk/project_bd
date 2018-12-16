@@ -376,6 +376,20 @@ insert into Athlete(nom, code_pays, id_sport,age) values('Camilla Herrem','NOR',
 insert into Athlete(nom, code_pays, id_sport,age) values('Sanna Solberg','NOR',36, TO_DATE('16/6/1990', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays, id_sport,age) values('Eleonora Giorgi','ITA',2, TO_DATE('14/09/1989', 'DD/MM/YYYY'));
 insert into Athlete(nom, code_pays, id_sport,age) values('Ayomide Folorunso','ITA',2, TO_DATE('17/10/1996', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Niccolo Campriani','ITA',2,0,0, 63, TO_DATE('06/11/1987', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Daniele Garozzo','ITA',1,1,0, 23, TO_DATE('04/08/1992','DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Gregorio Paltrinieri','ITA',1,0,0,45, TO_DATE('05/09/1994','DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Fabio Basile','ITA',1,0,0, 39, TO_DATE('07/10/1994','DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Diana Bacosi','ITA',1,0,0, 63, TO_DATE('13/07/1983','DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Gabriele Rossetti','ITA',1,0,0, 63, TO_DATE('07/03/1995','DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Elia Viviani','ITA',1,0,0, 17, TO_DATE('07/02/1989', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Tania Cagnotto','ITA',0,1,1, 54, TO_DATE('15/05/1985', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Odette Giuffrida','ITA',0,1,0, 40, TO_DATE('12/10/1994', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Paolo Pizzo','ITA',0,1,0, 23, TO_DATE('04/04/1983', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Rossella Fiamingo','ITA',0,1,0, 24, TO_DATE('14/07/1991', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Elisa Di Francisca','ITA',0,1,0, 24, TO_DATE('13/12/1982', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Marco Fichera','ITA',0,1,0, 23, TO_DATE('15/04/1993', 'DD/MM/YYYY'));
+  insert into Athlete(nom, code_pays,  nb_medailles_or, nb_medailles_argent, nb_medailles_bronze, id_sport, age) values('Andrea Santarelli','ITA',0,1,0, 23, TO_DATE('03/06/1993', 'DD/MM/YYYY'));
 
 --Pour calculer le total de nb_medailles
 update athlete set nb_medailles_total=(select (a.nb_medailles_or+a.nb_medailles_argent+a.nb_medailles_bronze) from athlete a where a.id_athlete = athlete.id_athlete);
