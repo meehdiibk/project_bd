@@ -20,3 +20,4 @@ select * from athlete where nb_medailles_or=0;
 -- 5
 select distinct e.* from epreuveindividuelle e, athlete a, athlete_epreuveindividuelle ae where a.code_pays<>'FRA' and a.id_athlete=ae.id_athlete and ae.id_epreuve=e.id_epreuve;
 -- 6
+select nom_epreuve as epreuve, min(performance) as meilleur_temps from athlete_epreuveindividuelle ae, epreuveindividuelle e, athlete where e.nom_epreuve like 'marathon%' and e.id_epreuve=ae.id_epreuve and athlete.id_athlete=ae.id_athlete group by nom_epreuve;
