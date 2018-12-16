@@ -18,7 +18,7 @@ select nom_epreuve as epreuve, min(performance) as meilleur_temps from athlete_e
 -- 1
 select e.nom_epreuve, a.code_pays, avg(performance) from athlete a, athlete_epreuveindividuelle ae, epreuveindividuelle e where e.nom_epreuve like '200m nage libre%' and e.id_epreuve=ae.id_epreuve and a.id_athlete=ae.id_athlete group by e.id_epreuve, a.code_pays;
 -- 2
-select * from pays;
+select rang, nom, nb_medailles_total from pays;
 -- 3
 create view medaille_or as select id_epreuve, nom as gagnant_or, a.code_pays from athlete a, athlete_epreuveindividuelle ae where medaille='or' and ae.id_athlete=a.id_athlete;
 create view medaille_argent as select id_epreuve, nom as gagnant_argent, a.code_pays from athlete a, athlete_epreuveindividuelle ae where medaille='argent' and ae.id_athlete=a.id_athlete;
@@ -30,7 +30,7 @@ select * from athlete where nb_medailles_or=0;
 -- 5
 select distinct e.* from epreuveindividuelle e, athlete a, athlete_epreuveindividuelle ae where a.code_pays<>'FRA' and a.id_athlete=ae.id_athlete and ae.id_epreuve=e.id_epreuve;
 -- 6
-select ae.* from athlete_epreuveindividuelle ae, epreuveindividuelle e where e.nom_epreuve like '100m%' and e.id_epreuve=ae.id_epreuve and  performance<'00:00:10';
+select a.nom, a.code_pays, ae.performance from athlete a, athlete_epreuveindividuelle ae, epreuveindividuelle e where e.nom_epreuve like '100m%' and e.id_epreuve=ae.id_epreuve and a.id_athlete=ae.id_athlete and  performance<'00:00:10';
 
 --Difficulte ***
 -- 2
