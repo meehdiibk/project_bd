@@ -572,9 +572,9 @@ insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, perfo
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, medaille, performance) values(55,18,'bronze','00:01:54.92');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(79,17,'00:01:45.49');
 insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(27,17,'00:01:45.90');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(215,17,'00:01:45.58');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(216,17,'00:01:45.84');
-insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(217,17,'00:01:45.91');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(214,17,'00:01:45.58');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(215,17,'00:01:45.84');
+insert into athlete_epreuveindividuelle (id_athlete, id_epreuve, performance) values(216,17,'00:01:45.91');
 
 --EpreuveCollective
 insert into epreuvecollective (id_sport) values (35);
