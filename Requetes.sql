@@ -20,4 +20,11 @@ select * from athlete where nb_medailles_or=0;
 -- 5
 select distinct e.* from epreuveindividuelle e, athlete a, athlete_epreuveindividuelle ae where a.code_pays<>'FRA' and a.id_athlete=ae.id_athlete and ae.id_epreuve=e.id_epreuve;
 -- 6
-select nom_epreuve as epreuve, min(performance) as meilleur_temps from athlete_epreuveindividuelle ae, epreuveindividuelle e, athlete where e.nom_epreuve like 'marathon%' and e.id_epreuve=ae.id_epreuve and athlete.id_athlete=ae.id_athlete group by nom_epreuve;
+
+--Difficulte ***
+-- 4
+create view tout as select count(*) as total from athlete where nb_medailles_total<>0;
+create view femmes as select count(*) as nb_femmes from athlete a, sport s where categorie='Femmes' and s.id_sport=a.id_sport and nb_medailles_total<>0;
+select  nb_femmes*100/total as pourcentage from tout, femmes;
+drop view tout;
+drop view femmes;
